@@ -1,0 +1,101 @@
+/* Font and Background */
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding: 0;
+}
+
+/* Section Styling */
+.section {
+    padding: 80px 20px;
+    text-align: center;
+    opacity: 1; /* Make sections visible by default */
+    transform: translateY(0); /* Position sections at default */
+    transition: all 0.6s ease-in-out;
+}
+
+/* Title and Heading Styling */
+.section h1, .section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.section p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Image Gallery Styling */
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.image-gallery img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Team Gallery Styling */
+.team-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.team-member {
+    text-align: center;
+    color: #fff;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin-bottom: 10px;
+}
+
+/* Scroll Reveal Animation */
+.section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Fallback Visibility for No JavaScript */
+.no-js .section {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.profit {
+    color: #4CAF50; /* Nice green color */
+    font-weight: bold; /* Optional: makes the text stand out */
+}
+
+.loss {
+    color: red; /* Nice green color */
+    font-weight: bold; /* Optional: makes the text stand out */
+}
